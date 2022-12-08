@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {},
     minWidth: {
+      '280': '280px',
+      '290': '290px',
       '300': '300px',
     },
     colors: {
