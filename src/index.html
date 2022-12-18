@@ -12,7 +12,7 @@
     <body class="bg-primary w-full min-w-300 overflow-x-hidden">
 
         <!-- BEGIN NAVBAR -->
-        <nav class="bg-header w-full fixed top-0 left-0 px-6 py-3 flex justify-between items-center">
+        <nav class="w-full fixed top-0 left-0 px-6 py-3 flex justify-between items-center">
 
             <!-- BEGIN LOGO -->
             <a href="#" class="flex items-center">
@@ -79,29 +79,32 @@
 
 
         <!-- BEGIN HOME SECTION -->
-        <section class="w-full mt-32 flex">
+        <section class="w-full mt-24 flex sm:mt-32">
 
             <!-- BEGIN INTRO-IMG BOX -->
 
-            <div class="flex flex-col items-center px-4">
+            <div class="w-full flex flex-col justify-center items-center px-6">
 
                 <!-- BEGIN INTRO BOX -->
-                <div class="relative leading-loose">
-
-                    <!-- <img src="../Images/top-right.png" alt="" class="absolute top-0 right-0 w-24 h-16">
-                    <img src="../Images/btm-left.png" alt="" class="absolute bottom-0 left-0 w-24 h-16"> -->
-
-                    <span class="block text-5xl font-sans font-bold text-secondary">Hey there,</span>
-                    <span class="block mt-5 text-5xl font-sans font-bold text-secondary">I'm Ryan</span>
- 
-                    <!-- <span class="text-5xl font-sans font-bold text-secondary">I'm Ryan</span> -->
+                <div class="relative leading-loose ml-4 sm:w-[450px] sm:h-52">
+                    <img src="../Images/top-right.png" alt="" class="hidden sm:inline absolute top-[-35px] right-0 w-24 h-16">
+                    <img src="../Images/btm-left.png" alt="" class="hidden sm:inline absolute bottom-[-30px] left-[-50px] w-24 h-16">
                     
+                    <span class="block text-5xl font-sans font-bold text-secondary sm:hidden">Hey there,</span>
+                    <span class="block mt-5 text-5xl font-sans font-bold text-header sm:hidden">I'm Ryan</span>
+                    <span class="hidden sm:block text-5xl font-sans font-bold text-secondary">Hey there! I'm</span>
+                    <span class="hidden sm:block mt-5 text-5xl font-sans font-bold text-header sm:ml-10 sm:text-6xl sm:mt-5 tracking-wider">Ryan Patel</span>
+
+
+
+                    <span class="block w-11/12 leading-6 text-md mt-7 sm:w-64 sm:ml-36">A penultimate year computing student at Imperial College London</span>
+                     
                 </div>
                 <!-- END INTRO BOX -->
 
                 <!-- BEGIN IMG BOX -->
-                <div class="">
-                    <img class="w-3/4 h-20" src="../Images/greece.png" alt="">
+                <div class="w-full flex justify-center sm:mt-14">
+                    <img class="w-80 mt-7 rounded-xl sm:w-80 border" src="../Images/greece.png" alt="">
                 </div>
 
                 <!-- END IMG BOX -->
