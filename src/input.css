@@ -4,7 +4,7 @@
 
 @layer components {
     .home-about-icons {
-        @apply flex justify-start mt-5;
+        @apply flex justify-start mt-5 mdl:mt-6;
     }
 
     .home-about-icon-img {

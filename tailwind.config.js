@@ -14,6 +14,9 @@ module.exports = {
         'header': '#7e0306',
         'link': '#2d2f83',
       },
+      screens: {
+        'mdl': '1007px',
+     },
     },
   },
   plugins: [],
