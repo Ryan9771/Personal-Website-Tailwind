@@ -115,9 +115,12 @@
         <!-- BEGIN LINE BREAK -->
 
         <!-- BEGIN HOME-ABOUT SECTION -->
-        <section class="w-full mt-16 flex justify-center md:mt-32">
+        <section class="w-full mt-16 flex justify-center md:mt-32 relative">
+
             <!-- BEGIN BLUE CTN WRAPPER -->
-            <div class="bg-secondary rounded-xl w-72 text-white grid grid-cols-1 p-8 pr-6 text-lg sm:w-80 sm:pl-10 mdl:grid-cols-2 mdl:w-8/12 mdl:rounded-2xl mdl:px-20 mdl:py-12 relative">
+            <div class="z-10 bg-secondary rounded-xl w-72 text-white grid grid-cols-1 p-8 pr-6 text-lg sm:w-80 sm:pl-10 mdl:grid-cols-2 mdl:w-8/12 mdl:rounded-2xl mdl:px-20 mdl:py-12 relative">
+
+                <!-- BEGIN TOP / LEFT HOME-ABT DIV -->
                 <div>
                     <span class="flex justify-start">
                         <svg class="home-about-icon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -148,7 +151,9 @@
                         <span>Mathematics Tutor</span>
                     </span>
                 </div>
+                <!-- END TOP / LEFT HOME-ABT DIV -->
 
+                <!-- BEGIN BOTTOM / RIGHT HOME-ABT DIV -->
                 <div class="mdl:absolute mdl:right-32 mdl:top-12">
                     <a class="flex justify-start mt-5 mdl:mt-0" href="https://www.instagram.com/nth.harmonic/" target="_blank">
                         <svg class="home-about-icon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -179,11 +184,20 @@
                         <span>Makes connections</span>
                     </span>
                 </div>
+                <!-- END BOTTOM / RIGHT HOME-ABT DIV -->
             </div>
-            <!-- BEGIN BLUE CTN WRAPPER -->
-        </section>
+            <!-- END BLUE CTN WRAPPER -->
 
+            <!-- BEGIN GRAY BACKGROUND -->
+            <div class="hidden sm:block w-full h-48 mdl:h-32 bg-gray-300 absolute top-1/2 translate-y-[-50%]">
+            </div>
+            <!-- END GRAY BACKGROUND -->
+        </section>
         <!-- END HOME-ABOUT SECTION -->
+
+        <!-- BEGIN LINE BREAK -->
+        <hr class="m-14 h-px bg-gray-200">
+        <!-- BEGIN LINE BREAK -->
 
 
         
