@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .home-about-icons {
+        @apply flex justify-start mt-5;
+    }
+
+    .home-about-icon-img {
+        @apply w-6 h-6 fill-white mr-3;
+    }
+}
+
