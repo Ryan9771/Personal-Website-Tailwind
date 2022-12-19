@@ -12,7 +12,7 @@
     }
 
     .contact-icons {
-        @apply py-1 px-4 flex justify-start border-2 border-secondary rounded-xl w-40 my-3 mx-5;
+        @apply py-1 px-2 md:py-2 flex justify-start border-2 border-secondary rounded-xl w-36 my-3 mx-5 items-center lg:mx-3;
     }
 
     .contact-icon {
