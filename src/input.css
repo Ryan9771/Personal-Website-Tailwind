@@ -18,5 +18,25 @@
     .contact-icon {
         @apply w-6 h-6 fill-secondary mr-2;
     }
+
+    .card {
+        @apply h-[384px] w-[288px] flex flex-col items-center m-9 rounded-xl overflow-hidden;
+    }
+
+    .card-img {
+        @apply flex-4 border-b-3 border-b-black w-full bg-cover;
+    }
+
+    .card-head-desc {
+        @apply flex flex-col flex-2 bg-secondary w-full text-center p-2 text-white;
+    }
+
+    .card-head {
+        @apply text-xl font-semibold;
+    }
+
+    .card-head-desc-text {
+        @apply text-base mt-3;
+    }
 }
 

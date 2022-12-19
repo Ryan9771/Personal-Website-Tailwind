@@ -20,8 +20,21 @@ module.exports = {
      flex: {
       '2': '2',
       '3': '3',
-     }
+      '4': '4',
+     },
+     backgroundImage: {
+      'discord': "url('/Images/discord1.png')",
+      'calculator': "url('/Images/calcHome.png')",
+      'tictactoe' : "url('/Images/tictactoeHome.png')",
+      'wordle': "url('/Images/game.png')",
+      'foobar': "url('/Images/solutions.png')",
+      'ds': "url('/Images/structures.png')", 
+     },
+     borderWidth: {
+      '3': '3px',
+     },
     },
   },
   plugins: [],
 }
+

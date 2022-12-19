@@ -203,11 +203,11 @@
         <section class="w-full mt-16 flex flex-col items-center justify-center relative md:mt-24 lg:mt-16 md:h-[700px]">
 
             <!-- BEGIN ABOUT/INFO WRAPPER -->
-            <div class="hidden w-full flex-col px-6 sm:px-12 sm:text-lg md:flex-row md:items-center" id="about-me">
+            <div class="w-full flex flex-col px-6 sm:px-12 sm:text-lg md:flex-row md:items-center md:mt-24" id="about-me">
 
                 <!-- BEGIN TITLE CTN -->
                 <div class="py-2 text-center md:pr-4 md:flex-2 md:h-full md:flex md:items-center md:justify-center md:border-r-2 md:border-r-black">
-                    <span class="font-bold text-2xl sm:text-4xl md:text-6xl">About Me</span>
+                    <span class="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl">About Me</span>
                 </div>
                 <!-- END TITLE CTN -->
                 
@@ -240,7 +240,7 @@
 
 
             <!-- BEGIN CONTACT/INFO WRAPPER -->
-            <div class="w-full flex flex-col px-6 sm:px-12 md:flex-row md:items-center" id="about-me">
+            <div class="w-full hidden flex-col px-6 sm:px-12 md:flex-row md:items-center" id="about-me">
 
                 <!-- BEGIN TITLE CTN -->
                 <div class="py-2 text-center md:pr-4 md:flex-2 md:h-full md:flex md:items-center md:justify-center md:border-r-2 md:border-r-black">
@@ -318,13 +318,75 @@
                 </svg>
             </div>
 
-            <!-- <div class="w-full mt-16 flex justify-center relative"></div> -->
         </section>
         <!-- END ABOUT SECTION -->
 
         <!-- BEGIN LINE BREAK -->
-        <hr class="m-12 h-px bg-gray-300 md:m-3">
+        <hr class="m-12 h-px bg-gray-300 md:hidden">
         <!-- BEGIN LINE BREAK -->
+
+        <!-- BEGIN PROJECT SECTION -->
+        <section class="w-full mt-16 flex flex-col items-center">
+            <!-- BEGIN PROJ HEADING -->
+            <span class="block text-2xl font-bold">Projects</span>
+            <!-- END PROJ HEADING -->
+
+            <!-- BEGIN CARD CTN -->
+            <div class="flex flex-wrap justify-center items-center">
+
+                <div class="card" proj-num="0">
+                    <div class="card-img bg-discord"></div>
+                    <div class="card-head-desc">
+                        <span class="card-head">Discord Bot</h2>
+                        <p class="card-head-desc-text">An interactive bot for my school discord server</p>
+                    </div>
+                </div>
+
+                <div class="card" proj-num="1">
+                    <div class="card-img bg-calculator"></div>
+                    <div class="card-head-desc">
+                        <span class="card-head">iOS Calculator Clone</span>
+                        <p class="card-head-desc-text">A clone of the famous iOS Calculator</p>
+                    </div>
+                </div>
+    
+                <div class="card" proj-num="2">
+                    <div class="card-img bg-tictactoe"></div>
+                    <div class="card-head-desc">
+                        <span class="card-head">Tic Tac Toe</span>
+                        <p class="card-head-desc-text">A single and multiplayer tic tac toe</p>
+                    </div>
+                </div>
+    
+                <div class="card" proj-num="3">
+                    <div class="card-img bg-wordle"></div>
+                    <div class="card-head-desc">
+                        <span class="card-head">Wordle Clone</span>
+                        <p class="card-head-desc-text">A fully functioning Wordle game</p>
+                    </div>
+                </div>
+    
+                <div class="card" proj-num="4">
+                    <div class="card-img bg-foobar"></div>
+                    <div class="card-head-desc">
+                        <span class="card-head">Google Foobar</span>
+                        <p class="card-head-desc-text">Solutions to Google's secret Foobar challenge</p>
+                    </div>
+                </div>
+    
+                <div class="card" proj-num="5">
+                    <div class="card-img bg-ds"></div>
+                    <div class="card-head-desc">
+                        <span class="card-head">Data Structures</span>
+                        <p class="card-head-desc-text">Over 13 data structures, in Java!</p>
+                    </div>
+                </div>
+
+                
+            </div>
+            <!-- END CARD CTN -->
+        </section>
+        <!-- END PROJECT SECTION -->
 
 
         
