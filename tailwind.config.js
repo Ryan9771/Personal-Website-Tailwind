@@ -17,6 +17,10 @@ module.exports = {
       screens: {
         'mdl': '1007px',
      },
+     flex: {
+      '2': '2',
+      '3': '3',
+     }
     },
   },
   plugins: [],

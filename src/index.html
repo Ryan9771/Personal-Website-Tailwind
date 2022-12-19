@@ -9,7 +9,7 @@
         <link href="/dist/output.css" rel="stylesheet">
     </head>
 
-    <body class="bg-primary w-full min-w-300 overflow-x-hidden">
+    <body class="bg-primary w-full min-w-300 overflow-x-hidden scroll-smooth">
 
         <!-- BEGIN NAVBAR -->
         <nav class="bg-primary z-50 w-full fixed top-0 left-0 px-6 py-3 flex justify-between items-center">
@@ -37,7 +37,7 @@
             <!-- BEGIN REST OF NAVBAR -->
             <ul class="flex justify-between">
                 <li class="sm:mr-4 md:mr-8">
-                    <a href="#" class="flex justify-center items-center">
+                    <a href="#about-me" class="flex justify-center items-center">
                         <svg class="p-[2px] mr-4 sm:mr-1 w-6 h-6 fill-black " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path
                                 d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464zM256 336c-18 0-32 14-32 32s13.1 32 32 32c17.1 0 32-14 32-32S273.1 336 256 336zM289.1 128h-51.1C199 128 168 159 168 198c0 13 11 24 24 24s24-11 24-24C216 186 225.1 176 237.1 176h51.1C301.1 176 312 186 312 198c0 8-4 14.1-11 18.1L244 251C236 256 232 264 232 272V288c0 13 11 24 24 24S280 301 280 288V286l45.1-28c21-13 34-36 34-60C360 159 329 128 289.1 128z" />
@@ -84,7 +84,7 @@
             <div class="w-full flex flex-col justify-center items-center px-6 md:flex-row md:justify-around">
 
                 <!-- BEGIN INTRO BOX -->
-                <div class="relative leading-loose ml-4 sm:w-[450px] sm:h-52 md:ml-0 lg:scale-110 lg:ml-8">
+                <div class="relative leading-loose ml-4 sm:w-[450px] sm:h-52 md:ml-0 lg:scale-110 lg:ml-10">
                     <img src="../Images/top-right.png" alt="" class="hidden sm:inline absolute top-[-35px] right-0 w-24 h-16">
                     <img src="../Images/btm-left.png" alt="" class="hidden sm:inline absolute bottom-[-30px] left-[-43px] w-24 h-16">
                     
@@ -196,7 +196,66 @@
         <!-- END HOME-ABOUT SECTION -->
 
         <!-- BEGIN LINE BREAK -->
-        <hr class="m-14 h-px bg-gray-200">
+        <hr class="m-14 h-px bg-gray-200 md:hidden">
+        <!-- BEGIN LINE BREAK -->
+
+        <!-- BEGIN ABOUT SECTION -->
+        <section class="w-full mt-16 flex flex-col items-center justify-center relative md:mt-24 lg:mt-16 md:h-[700px]">
+
+            <!-- BEGIN ABOUT/INFO WRAPPER -->
+            <div class="w-full flex flex-col px-6 sm:px-12 sm:text-lg md:flex-row md:items-center" id="about-me">
+                <!-- BEGIN TITLE CTN -->
+                <div class="py-2 text-center md:pr-4 md:flex-2 md:h-full md:flex md:items-center md:justify-center md:border-r-2 md:border-r-black">
+                    <span class="font-bold text-2xl sm:text-4xl md:text-6xl">About Me</span>
+                </div>
+                <!-- END TITLE CTN -->
+                
+                <hr class="m-4 h-[2px] bg-black w-1/2 self-center md:hidden">
+
+                <div class="flex justify-center items-center md:flex-3 md:ml-4 md:pl-24">
+                    <div>
+                        <div class="font-semibold mt-10 sm:mt-16 text-lg sm:text-xl md:mt-0">General</div>
+                        <div class="mt-3">
+                            I am a 2nd year computing student at Imperial College London. I believe I am a fast learner, since my journey in this field began only a year ago. In the span of a year, I have learnt multiple languages, frameworks, and touched different areas such as AI and Machine learning. Computing is truly a remarkable field that I wish to pursue to make more information readily accessible to people.
+                        </div>
+        
+                        <div class="font-semibold mt-7 text-lg sm:text-xl sm:mt-9 md:mt-12">Interests</div>
+                        <div class="mt-3">
+                            <span class="about-text-ctn-text">
+                                I love Web and App development. I have made multiple repositories on <a
+                                    href="https://github.com/Ryan9771" target="_blank" style="color:rgb(57, 57, 167)">GitHub</a>
+                                experimenting
+                                with React Native. I am also interested in AI and Machine learning, after having constructed an
+                                OCR-related API in python involving these areas, during my internship at
+                                <a href="https://thewalnut.ai/" target="_blank" style="color:rgb(57, 57, 167)">The Walnut.ai</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BEGIN INFO CTN -->
+               
+                <!-- END INFO CTN -->
+            </div>
+            <!-- END ABOUT/INFO WRAPPER -->
+
+            
+
+            <div class="inline-flex mt-16">
+                <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 w-32 font-bold py-2 px-4 rounded-l">
+                  About Me
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 w-32 font-bold py-2 px-4 rounded-r">
+                  Contact Me
+                </button>
+            </div>
+
+            <!-- <div class="w-full mt-16 flex justify-center relative"></div> -->
+        </section>
+        <!-- END ABOUT SECTION -->
+
+        <!-- BEGIN LINE BREAK -->
+        <hr class="m-12 h-px bg-gray-300 md:m-3">
         <!-- BEGIN LINE BREAK -->
 
 
