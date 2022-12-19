@@ -10,5 +10,13 @@
     .home-about-icon-img {
         @apply w-6 h-6 fill-white mr-3;
     }
+
+    .contact-icons {
+        @apply py-1 px-4 flex justify-start border-2 border-secondary rounded-xl w-40 my-3 mx-5;
+    }
+
+    .contact-icon {
+        @apply w-6 h-6 fill-secondary mr-2;
+    }
 }
 
