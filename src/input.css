@@ -61,7 +61,7 @@
     }
 
     .modal-img-text-ctn {
-        @apply leading-6 lg:flex lg:flex-row lg:items-center;
+        @apply leading-6 lg:flex lg:flex-row lg:items-start;
     }
 
     .modal-img-itrs-link-ctn {
