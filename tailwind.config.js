@@ -23,12 +23,12 @@ module.exports = {
       '4': '4',
      },
      backgroundImage: {
-      'discord': "url('/Images/discord1.png')",
-      'calculator': "url('/Images/calcHome.png')",
-      'tictactoe' : "url('/Images/tictactoeHome.png')",
-      'wordle': "url('/Images/game.png')",
-      'foobar': "url('/Images/solutions.png')",
-      'ds': "url('/Images/structures.png')", 
+      'discord': "url('/Images/DiscordBot/discord1.png')",
+      'calculator': "url('/Images/Calculator/calcHome.png')",
+      'tictactoe' : "url('/Images/TicTacToe/tictactoeHome.png')",
+      'wordle': "url('/Images/Wordle/game.png')",
+      'foobar': "url('/Images/GoogleFoobar/solutions.png')",
+      'ds': "url('/Images/DataStructures/structures.png')", 
      },
      borderWidth: {
       '3': '3px',
