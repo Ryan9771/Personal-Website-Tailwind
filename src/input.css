@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 @layer components {
+
+    /* Home-about */
     .home-about-icons {
         @apply flex justify-start mt-5 mdl:mt-6;
     }
@@ -11,6 +13,7 @@
         @apply w-6 h-6 fill-white mr-3;
     }
 
+    /* Contact icons */
     .contact-icons {
         @apply py-1 px-2 md:py-2 flex justify-start border-2 border-secondary rounded-xl w-36 my-3 mx-5 items-center lg:mx-3;
     }
@@ -19,6 +22,8 @@
         @apply w-6 h-6 fill-secondary mr-2;
     }
 
+
+    /* Project */
     .card {
         @apply h-[300px] w-[225px] md:h-[384px] md:w-[288px] flex flex-col items-center m-9 rounded-xl overflow-hidden;
     }
@@ -38,5 +43,89 @@
     .card-head-desc-text {
         @apply text-base mt-3;
     }
+
+
+    /* Project Modals */
+
+    .modal-ctn {
+        @apply flex justify-center p-5 flex-col min-w-300 sm:p-8;
+    }
+
+    .modal-close-btn {
+        @apply absolute top-0 left-0 lg:left-2;
+
+    }
+
+    .modal-heading {
+        @apply mb-10 tracking-wide sm:mb-16 mt-10 text-center block text-4xl sm:text-5xl font-semibold;
+    }
+
+    .modal-img-text-ctn {
+        @apply leading-6 lg:flex lg:flex-row lg:items-center;
+    }
+
+    .modal-img-itrs-link-ctn {
+        @apply flex items-center flex-col lg:basis-1/3 lg:max-w-sm;
+    }
+
+    .modal-img {
+        @apply rounded-xl w-60 sm:w-80 lg:w-full;
+    }
+
+    .modal-itr-arrows {
+        @apply flex justify-center mt-5 sm:mt-7;
+    }
+
+    .modal-arrow-left {
+        @apply w-7 h-7 mx-4 sm:w-8 sm:h-8 rotate-180;
+    }
+
+    .modal-arrow-right {
+        @apply w-7 h-7 mx-4 sm:w-8 sm:h-8;
+    }
+
+    .modal-github-btn {
+        @apply mt-5;
+    }
+
+    .modal-github-link {
+        @apply bg-black flex p-2 rounded-lg items-center;
+    }
+
+    .modal-github-icon {
+        @apply w-6 h-6 fill-white;
+    }
+
+    .modal-github-text {
+        @apply text-white ml-2;
+    }
+
+    .modal-text-ctn {
+        @apply lg:flex lg:flex-col lg:basis-2/3 lg:pl-8 pr-2 xl:pl-16;
+    }
+
+    .modal-text-para-top {
+        @apply mt-16 sm:text-lg lg:mt-0;
+    }
+
+    .modal-text-para-main {
+        @apply mt-5 sm:text-lg;
+    }
+
+    .modal-list-wrapper {
+        @apply mt-6 sm:mt-12 bg-gray-300 p-3 rounded-lg bg-opacity-90;
+    }
+
+    .modal-list-header {
+        @apply text-xl font-medium sm:text-2xl;
+    }
+
+    .modal-list-list {
+        @apply list-disc mt-2 ml-8 sm:text-lg;
+    }
+
+
+
+
 }
 
