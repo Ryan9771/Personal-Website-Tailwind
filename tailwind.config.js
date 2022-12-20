@@ -33,6 +33,9 @@ module.exports = {
      borderWidth: {
       '3': '3px',
      },
+     width: {
+      '37': '149px',
+     },
     },
   },
   plugins: [],

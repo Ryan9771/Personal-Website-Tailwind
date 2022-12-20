@@ -200,13 +200,13 @@
         <!-- BEGIN LINE BREAK -->
 
         <!-- BEGIN ABOUT SECTION -->
-        <section class="w-full mt-16 flex flex-col items-center justify-center relative md:mt-24 lg:mt-16 md:h-[700px]">
+        <section class="w-full mt-16 flex flex-col items-center justify-center relative md:mt-24 lg:mt-16">
 
             <!-- BEGIN ABOUT/INFO WRAPPER -->
-            <div class="w-full flex flex-col px-6 sm:px-12 sm:text-lg md:flex-row md:items-center md:mt-24" id="about-me">
+            <div class="w-full hidden flex-col px-6 sm:px-12 sm:text-lg md:flex-row md:items-center md:mt-24" id="about-me">
 
                 <!-- BEGIN TITLE CTN -->
-                <div class="py-2 text-center md:pr-4 md:flex-2 md:h-full md:flex md:items-center md:justify-center md:border-r-2 md:border-r-black">
+                <div class="py-2 text-center md:pr-4 md:flex-2 md:h-full md:flex md:items-center md:justify-center">
                     <span class="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl">About Me</span>
                 </div>
                 <!-- END TITLE CTN -->
@@ -214,7 +214,7 @@
                 <hr class="m-4 h-[2px] bg-black w-1/2 self-center md:hidden">
 
                 <!-- BEGIN INFO CTN -->
-                <div class="flex justify-center items-center md:flex-3 md:ml-4 md:pl-24 md:pr-12">
+                <div class="flex justify-center items-center md:border-l-2 md:border-l-black md:flex-3 md:ml-4 md:pl-24 md:pr-12">
                     <div>
                         <div class="font-semibold mt-10 sm:mt-16 text-lg sm:text-xl md:mt-0 px-3">General</div>
                         <div class="mt-3 px-3">
@@ -240,10 +240,10 @@
 
 
             <!-- BEGIN CONTACT/INFO WRAPPER -->
-            <div class="w-full hidden flex-col px-6 sm:px-12 md:flex-row md:items-center" id="about-me">
+            <div class="w-full flex flex-col px-6 sm:px-12 md:flex-row md:items-center md:mt-24" id="about-me">
 
                 <!-- BEGIN TITLE CTN -->
-                <div class="py-2 text-center md:pr-4 md:flex-2 md:h-full md:flex md:items-center md:justify-center md:border-r-2 md:border-r-black">
+                <div class="py-2 text-center md:pr-4 md:flex-2 md:h-full md:flex md:items-center md:justify-center">
                     <span class="font-bold text-2xl sm:text-4xl md:text-6xl">Get in Touch!</span>
                 </div>
                 <!-- END TITLE CTN -->
@@ -251,15 +251,19 @@
                 <hr class="m-4 h-[2px] bg-black w-1/2 self-center md:hidden">
 
                 <!-- BEGIN INFO CTN -->
-                <div class="flex justify-center items-center md:flex-3 md:ml-3 md:pl-24 md:pr-12">
+                <div class="flex justify-center items-center md:flex-3 md:ml-3 md:pl-24 md:pr-12 md:border-l-2 md:border-l-black">
                     <div>
+
+                        <!-- BEGIN INFO TEXT -->
                         <div class="font-bold mt-10 sm:mt-16 text-lg sm:text-xl md:mt-0 px-3">Feel free to collaborate or reach out</div>
                         <div class="mt-3 px-3">
                             I love to create and collaborate on projects with people. Previous group projects include making an emulator and an assembler in C. Ongoing projects that I am undertaking include a discord bot for the Imperial Computing server, a Pintos project, and a public website to help creators find good colour palettes for their colour theme.
                         </div>
+                        <!-- END INFO TEXT -->
 
                         <!-- BEGIN LINK BUTTONS -->
                         <div class="flex flex-wrap justify-center items-center mt-12 w-full sm:px-5 md:px-3 lg:mt-24">
+
                             <a class="contact-icons" href="https://github.com/Ryan9771" target="_blank">
                                 <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                                     <path
@@ -292,16 +296,14 @@
                             </a>
 
                         </div>
-                            
                         <!-- END LINK BUTTONS -->
-        
                     </div>
                 </div>
                 <!-- END INFO CTN -->
             </div>
             <!-- END CONTACT/INFO WRAPPER -->
 
-            
+            <!-- BEGIN TOGGLE BUTTON -->
             <div class="inline-flex mt-16 md:mt-24 lg:hidden">
                 <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 w-32 font-bold py-2 px-4 rounded-l">
                   About Me
@@ -310,29 +312,32 @@
                   Contact Me
                 </button>
             </div>
+            <!-- END TOGGLE BUTTON -->
 
+            <!-- BEGIN TOGGLE ARROW -->
             <div class="hidden lg:inline-flex self-end mt-12 mr-16">
                 <svg id="next-btn-icon" class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
                         d="M0 256C0 397.4 114.6 512 256 512s256-114.6 256-256S397.4 0 256 0S0 114.6 0 256zm395.3 11.3l-112 112c-4.6 4.6-11.5 5.9-17.4 3.5s-9.9-8.3-9.9-14.8l0-64-96 0c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32l96 0 0-64c0-6.5 3.9-12.3 9.9-14.8s12.9-1.1 17.4 3.5l112 112c6.2 6.2 6.2 16.4 0 22.6z" />
                 </svg>
             </div>
+            <!-- END TOGGLE ARROW -->
 
         </section>
         <!-- END ABOUT SECTION -->
 
         <!-- BEGIN LINE BREAK -->
-        <hr class="m-12 h-px bg-gray-300 md:hidden">
+        <hr class="m-12 h-px bg-gray-300 lg:hidden">
         <!-- BEGIN LINE BREAK -->
 
         <!-- BEGIN PROJECT SECTION -->
-        <section class="w-full mt-16 flex flex-col items-center">
+        <section class="w-full mt-16 flex flex-col items-center sm:mt-24">
             <!-- BEGIN PROJ HEADING -->
-            <span class="block text-2xl font-bold">Projects</span>
+            <span class="block text-3xl mb-5 font-bold sm:text-4xl sm:mb-12 md:text-5xl">Projects</span>
             <!-- END PROJ HEADING -->
 
             <!-- BEGIN CARD CTN -->
-            <div class="flex flex-wrap justify-center items-center">
+            <div class="flex flex-wrap justify-center items-center lg:px-2">
 
                 <div class="card" proj-num="0">
                     <div class="card-img bg-discord"></div>
@@ -381,10 +386,10 @@
                         <p class="card-head-desc-text">Over 13 data structures, in Java!</p>
                     </div>
                 </div>
-
                 
             </div>
             <!-- END CARD CTN -->
+
         </section>
         <!-- END PROJECT SECTION -->
 
