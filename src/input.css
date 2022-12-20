@@ -69,7 +69,7 @@
     }
 
     .modal-img {
-        @apply rounded-xl w-60 sm:w-80 lg:w-full;
+        @apply rounded-xl w-60 sm:w-80;
     }
 
     .modal-itr-arrows {
