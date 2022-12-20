@@ -20,7 +20,7 @@
     }
 
     .card {
-        @apply h-[384px] w-[288px] flex flex-col items-center m-9 rounded-xl overflow-hidden;
+        @apply h-[300px] w-[225px] md:h-[384px] md:w-[288px] flex flex-col items-center m-9 rounded-xl overflow-hidden;
     }
 
     .card-img {
