@@ -30,11 +30,11 @@
 
     /* Contact icons */
     .contact-icons {
-        @apply py-1 px-2 md:py-2 flex justify-start border-2 border-secondary rounded-xl w-36 my-3 mx-5 items-center lg:mx-3;
+        @apply py-1 px-2 md:py-2 flex justify-start border-2 border-secondary rounded-xl w-36 my-3 mx-5 items-center lg:mx-3 fill-secondary hover:scale-110 hover:fill-white hover:bg-secondary hover:text-white hover:font-medium trans;
     }
 
     .contact-icon {
-        @apply w-6 h-6 fill-secondary mr-2;
+        @apply w-6 h-6 fill-inherit mr-2;
     }
 
 
