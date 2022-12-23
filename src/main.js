@@ -15,6 +15,24 @@ let cnt = 0;
 aboutCtns[0].classList.remove("hidden");
 aboutCtns[0].classList.add("flex");
 
+
+/* Helper functions to toggle btns colour */
+function colour(btnNum) {
+    if (btnNum === 1) {
+        btn1.classList.remove("bg-gray-300");
+        btn1.classList.add("bg-gray-400")
+
+        btn2.classList.remove("bg-gray-400");
+        btn2.classList.add("bg-gray-300")
+    } else {
+        btn2.classList.remove("bg-gray-300");
+        btn2.classList.add("bg-gray-400")
+
+        btn1.classList.remove("bg-gray-400");
+        btn1.classList.add("bg-gray-300")
+    }
+}
+
 // The about button is pressed
 btn1.addEventListener("click", function() {
     if (aboutCtns[1].classList.contains("flex")) {
@@ -25,11 +43,7 @@ btn1.addEventListener("click", function() {
         aboutCtns[0].classList.add("flex");
         arrowIcon.style.transform = "rotate(0deg)";
 
-        btn1.classList.remove("bg-gray-300");
-        btn1.classList.add("bg-gray-400")
-
-        btn2.classList.remove("bg-gray-400");
-        btn2.classList.add("bg-gray-300")
+        colour(1);
         cnt = 0;
     }
 })
@@ -44,11 +58,8 @@ btn2.addEventListener("click", function() {
         aboutCtns[1].classList.add("flex");
         arrowIcon.style.transform = "rotate(-180deg)";
 
-        btn2.classList.remove("bg-gray-300");
-        btn2.classList.add("bg-gray-400")
+        colour(2);
 
-        btn1.classList.remove("bg-gray-400");
-        btn1.classList.add("bg-gray-300")
         cnt = 1;
     }
 })
@@ -61,19 +72,11 @@ arrow.addEventListener("click", function() {
     if (cnt == 0) {
         cnt++;
         rotate = "-180deg";
-
-        // Need to show contact
-        btn1.classList.remove("bg-gray-400");
-        btn1.classList.add("bg-gray-300");
-        btn2.classList.remove("bg-gray-300");
-        btn2.classList.add("bg-gray-400");
+        colour(2);
     } else {
         cnt = 0;
         rotate = "0deg";
-        btn2.classList.remove("bg-gray-400");
-        btn2.classList.add("bg-gray-300");
-        btn1.classList.remove("bg-gray-300");
-        btn1.classList.add("bg-gray-400");
+        colour(1);
     }
     aboutCtns[cnt].classList.remove("hidden");
     aboutCtns[cnt].classList.add("flex");
@@ -93,20 +96,14 @@ function toggleAboutContact(count) {
             aboutCtns[1].classList.remove("flex");
             aboutCtns[1].classList.add("hidden"); 
         }
-        btn2.classList.remove("bg-gray-400");
-        btn2.classList.add("bg-gray-300");
-        btn1.classList.remove("bg-gray-300");
-        btn1.classList.add("bg-gray-400");
+        colour(1);
         arrowIcon.style.transform = 'rotate(0deg)';
     } else {
         if (aboutCtns[0].classList.contains("flex")) {
             aboutCtns[0].classList.remove("flex");
             aboutCtns[0].classList.add("hidden"); 
         }
-        btn1.classList.remove("bg-gray-400");
-        btn1.classList.add("bg-gray-300");
-        btn2.classList.remove("bg-gray-300");
-        btn2.classList.add("bg-gray-400");
+        colour(2);
         arrowIcon.style.transform = 'rotate(-180deg)';    
     }
 }
