@@ -40,23 +40,23 @@
 
     /* Project */
     .card {
-        @apply h-[300px] w-[225px] md:h-[384px] md:w-[288px] flex flex-col items-center m-9 rounded-xl overflow-hidden;
+        @apply box-border h-[300px] w-[225px] md:h-[384px] md:w-[288px] flex flex-col items-center m-9 rounded-xl overflow-hidden border-[0.1px] border-gray-600 hover:border-red-600 hover:border-[4px] hover:rounded-2xl hover:scale-110 trans;
     }
 
     .card-img {
-        @apply flex-4 border-b-3 border-b-black w-full bg-cover;
+        @apply box-border flex-4 border-b-3 border-b-black w-full bg-cover;
     }
 
     .card-head-desc {
-        @apply flex flex-col flex-2 bg-secondary w-full text-center p-2 text-white;
+        @apply box-border flex flex-col flex-2 bg-secondary w-full text-center p-2 text-white;
     }
 
     .card-head {
-        @apply text-xl font-semibold;
+        @apply box-border text-xl font-semibold;
     }
 
     .card-head-desc-text {
-        @apply text-base mt-3;
+        @apply box-border text-base font-medium mt-3 px-2;
     }
 
 
@@ -104,7 +104,7 @@
     }
 
     .modal-github-link {
-        @apply bg-black flex p-2 rounded-lg items-center;
+        @apply bg-black flex p-2 rounded-lg items-center hover:scale-110 trans;
     }
 
     .modal-github-icon {
