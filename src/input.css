@@ -83,7 +83,7 @@
     }
 
     .modal-img-itrs-link-ctn {
-        @apply flex items-center flex-col lg:basis-1/3 lg:max-w-sm;
+        @apply flex items-center flex-col lg:flex-4 lg:max-w-sm;
     }
 
     .modal-img {
@@ -95,11 +95,11 @@
     }
 
     .modal-arrow-left {
-        @apply w-7 h-7 mx-4 sm:w-8 sm:h-8 rotate-180 hover:scale-110 trans;
+        @apply w-7 h-7 mx-4 sm:w-8 sm:h-8 rotate-180 hover:scale-110 hover:fill-lblue trans;
     }
 
     .modal-arrow-right {
-        @apply w-7 h-7 mx-4 sm:w-8 sm:h-8 hover:scale-110 trans;
+        @apply w-7 h-7 mx-4 sm:w-8 sm:h-8 hover:scale-110 hover:fill-lblue trans;
     }
 
     .modal-github-btn {
@@ -119,7 +119,7 @@
     }
 
     .modal-text-ctn {
-        @apply lg:flex lg:flex-col lg:basis-2/3 lg:pl-8 pr-2 xl:pl-16;
+        @apply lg:flex lg:flex-col lg:flex-4 lg:pl-8 pr-2 xl:pl-16;
     }
 
     .modal-text-para-top {

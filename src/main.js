@@ -11,10 +11,6 @@ const btn2 = document.getElementById("btn-2");
 // Keeps track which of about / contact is shown
 let cnt = 0;
 
-// Default state 
-aboutCtns[0].classList.remove("hidden");
-aboutCtns[0].classList.add("flex");
-
 
 /* Helper functions to toggle btns colour */
 function colour(btnNum) {
@@ -33,16 +29,32 @@ function colour(btnNum) {
     }
 }
 
-// The about button is pressed
-btn1.addEventListener("click", function() {
-    if (aboutCtns[1].classList.contains("flex")) {
+// Toggles visiblity of the about div
+function reveal(aboutNum) {
+    if (aboutNum === 0) {
         aboutCtns[1].classList.remove("flex");
         aboutCtns[1].classList.add("hidden");
 
         aboutCtns[0].classList.remove("hidden");
         aboutCtns[0].classList.add("flex");
-        arrowIcon.style.transform = "rotate(0deg)";
+    } else {
+        aboutCtns[0].classList.remove("flex");
+        aboutCtns[0].classList.add("hidden");
 
+        aboutCtns[1].classList.remove("hidden");
+        aboutCtns[1].classList.add("flex");
+    }
+}
+
+// Default state 
+aboutCtns[0].classList.remove("hidden");
+aboutCtns[0].classList.add("flex");
+
+// The about button is pressed
+btn1.addEventListener("click", function() {
+    if (aboutCtns[1].classList.contains("flex")) {
+        reveal(0);
+        arrowIcon.style.transform = "rotate(0deg)";
         colour(1);
         cnt = 0;
     }
@@ -51,15 +63,9 @@ btn1.addEventListener("click", function() {
 // The contact button is pressed
 btn2.addEventListener("click", function() {
     if (aboutCtns[0].classList.contains("flex")) {
-        aboutCtns[0].classList.remove("flex");
-        aboutCtns[0].classList.add("hidden");
-
-        aboutCtns[1].classList.remove("hidden");
-        aboutCtns[1].classList.add("flex");
+        reveal(1);
         arrowIcon.style.transform = "rotate(-180deg)";
-
         colour(2);
-
         cnt = 1;
     }
 })
@@ -121,4 +127,5 @@ contactNavBtn.addEventListener("click", () => {
     cnt = 1;
     toggleAboutContact(cnt);
 })
+
 
