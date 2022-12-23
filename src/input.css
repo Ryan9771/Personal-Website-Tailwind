@@ -2,7 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
+
+    /* All transitions */
+    .trans {
+        @apply transition duration-200;
+    }
+
+    /* Navbar */
+    .nav-li {
+        @apply sm:py-[3px] sm:px-[5px] rounded-lg sm:hover:bg-orangy sm:hover:fill-white sm:hover:text-white sm:hover:scale-110 trans;
+    }
+
+    .nav-def {
+        @apply sm:mr-2 md:mr-6;
+    }
 
     /* Home-about */
     .home-about-icons {
