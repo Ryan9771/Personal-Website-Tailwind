@@ -68,7 +68,10 @@
 
     .modal-close-btn {
         @apply absolute top-0 left-0 lg:left-2;
+    }
 
+    .modal-close-btn-svg {
+        @apply w-5 h-5 sm:w-6 sm:h-6 absolute left-4 top-6 sm:top-10 hover:rotate-[-180deg] hover:scale-110 trans;
     }
 
     .modal-heading {
@@ -92,11 +95,11 @@
     }
 
     .modal-arrow-left {
-        @apply w-7 h-7 mx-4 sm:w-8 sm:h-8 rotate-180;
+        @apply w-7 h-7 mx-4 sm:w-8 sm:h-8 rotate-180 hover:scale-110 trans;
     }
 
     .modal-arrow-right {
-        @apply w-7 h-7 mx-4 sm:w-8 sm:h-8;
+        @apply w-7 h-7 mx-4 sm:w-8 sm:h-8 hover:scale-110 trans;
     }
 
     .modal-github-btn {
