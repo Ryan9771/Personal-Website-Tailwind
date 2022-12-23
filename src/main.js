@@ -61,9 +61,19 @@ arrow.addEventListener("click", function() {
     if (cnt == 0) {
         cnt++;
         rotate = "-180deg";
+
+        // Need to show contact
+        btn1.classList.remove("bg-gray-400");
+        btn1.classList.add("bg-gray-300");
+        btn2.classList.remove("bg-gray-300");
+        btn2.classList.add("bg-gray-400");
     } else {
         cnt = 0;
         rotate = "0deg";
+        btn2.classList.remove("bg-gray-400");
+        btn2.classList.add("bg-gray-300");
+        btn1.classList.remove("bg-gray-300");
+        btn1.classList.add("bg-gray-400");
     }
     aboutCtns[cnt].classList.remove("hidden");
     aboutCtns[cnt].classList.add("flex");
@@ -83,12 +93,20 @@ function toggleAboutContact(count) {
             aboutCtns[1].classList.remove("flex");
             aboutCtns[1].classList.add("hidden"); 
         }
+        btn2.classList.remove("bg-gray-400");
+        btn2.classList.add("bg-gray-300");
+        btn1.classList.remove("bg-gray-300");
+        btn1.classList.add("bg-gray-400");
         arrowIcon.style.transform = 'rotate(0deg)';
     } else {
         if (aboutCtns[0].classList.contains("flex")) {
             aboutCtns[0].classList.remove("flex");
             aboutCtns[0].classList.add("hidden"); 
         }
+        btn1.classList.remove("bg-gray-400");
+        btn1.classList.add("bg-gray-300");
+        btn2.classList.remove("bg-gray-300");
+        btn2.classList.add("bg-gray-400");
         arrowIcon.style.transform = 'rotate(-180deg)';    
     }
 }
