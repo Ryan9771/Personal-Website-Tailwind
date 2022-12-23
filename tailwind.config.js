@@ -8,6 +8,11 @@ module.exports = {
         '290': '290px',
         '300': '300px',
       },
+      minHeight: {
+        '35': '35rem',
+        '36': '36rem',
+        '40': '40rem',
+      },
       colors: {
         'primary': '#FEFDE8',
         'secondary': '#003049',
