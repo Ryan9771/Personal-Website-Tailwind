@@ -13,7 +13,8 @@ module.exports = {
         'secondary': '#003049',
         'header': '#7e0306',
         'link': '#2d2f83',
-        'orangy': 'rgb(162, 66, 11)'
+        'orangy': 'rgb(162, 66, 11)',
+        'lblue': '#3f43b2',
       },
       screens: {
         'mdl': '1007px',
