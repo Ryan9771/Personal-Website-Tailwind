@@ -5,6 +5,8 @@ const aboutCtns = [...document.querySelectorAll(".about-ctn")];
 const tab = document.querySelector(".next-btn-1");
 const arrow = document.querySelector(".next-btn-2");
 const arrowIcon = document.getElementById("next-btn-icon");
+const btn1 = document.getElementById("btn-1");
+const btn2 = document.getElementById("btn-2");
 
 // Keeps track which of about / contact is shown
 let cnt = 0;
@@ -12,6 +14,44 @@ let cnt = 0;
 // Default state 
 aboutCtns[0].classList.remove("hidden");
 aboutCtns[0].classList.add("flex");
+
+// The about button is pressed
+btn1.addEventListener("click", function() {
+    if (aboutCtns[1].classList.contains("flex")) {
+        aboutCtns[1].classList.remove("flex");
+        aboutCtns[1].classList.add("hidden");
+
+        aboutCtns[0].classList.remove("hidden");
+        aboutCtns[0].classList.add("flex");
+        arrowIcon.style.transform = "rotate(0deg)";
+
+        btn1.classList.remove("bg-gray-300");
+        btn1.classList.add("bg-gray-400")
+
+        btn2.classList.remove("bg-gray-400");
+        btn2.classList.add("bg-gray-300")
+        cnt = 0;
+    }
+})
+
+// The contact button is pressed
+btn2.addEventListener("click", function() {
+    if (aboutCtns[0].classList.contains("flex")) {
+        aboutCtns[0].classList.remove("flex");
+        aboutCtns[0].classList.add("hidden");
+
+        aboutCtns[1].classList.remove("hidden");
+        aboutCtns[1].classList.add("flex");
+        arrowIcon.style.transform = "rotate(-180deg)";
+
+        btn2.classList.remove("bg-gray-300");
+        btn2.classList.add("bg-gray-400")
+
+        btn1.classList.remove("bg-gray-400");
+        btn1.classList.add("bg-gray-300")
+        cnt = 1;
+    }
+})
 
 // Switches to the right about state with correct arrow direction
 arrow.addEventListener("click", function() {
