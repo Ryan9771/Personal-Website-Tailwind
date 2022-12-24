@@ -83,11 +83,15 @@
     }
 
     .modal-img-itrs-link-ctn {
-        @apply flex items-center flex-col lg:flex-4 lg:max-w-sm;
+        @apply flex items-center flex-col lg:max-w-sm;
+    }
+
+    .modal-text-ctn {
+        @apply lg:flex lg:flex-col lg:flex-1 lg:pl-8 pr-2 xl:pl-16;
     }
 
     .modal-img {
-        @apply rounded-xl w-60 sm:w-80;
+        @apply rounded-xl w-72 sm:w-96;
     }
 
     .modal-itr-arrows {
@@ -118,10 +122,6 @@
         @apply text-white ml-2;
     }
 
-    .modal-text-ctn {
-        @apply lg:flex lg:flex-col lg:flex-4 lg:pl-8 pr-2 xl:pl-16;
-    }
-
     .modal-text-para-top {
         @apply mt-16 sm:text-lg lg:mt-0;
     }
@@ -141,9 +141,5 @@
     .modal-list-list {
         @apply list-disc mt-2 ml-8 sm:text-lg;
     }
-
-
-
-
 }
 
